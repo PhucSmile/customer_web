@@ -1,0 +1,48 @@
+import { SaleObjectType } from '@/types/SaleObjectTypes/SaleObjectType';
+
+export const cartData: SaleObjectType[] = [
+  {
+    id: '1',
+    image_url: '/img/items/item1.png',
+    name: 'Cà rốt',
+    net_weight: '100',
+    unit: 'g',
+    quantity: 1,
+    price: 5000,
+    starRank: 4.5,
+    reviews: 25,
+  },
+  {
+    id: '2',
+    image_url: '/img/items/item1.png',
+    unit: 'g',
+    quantity: 2,
+    net_weight: '200',
+    name: 'Cải thảo',
+    price: 10000,
+    starRank: 3.5,
+    reviews: 10,
+  },
+  {
+    id: '3',
+    image_url: '/img/items/item1.png',
+    unit: 'g',
+    quantity: 5,
+    net_weight: '150',
+    name: 'Cải xoong',
+    price: 8000,
+    starRank: 4,
+    reviews: 15,
+  },
+  {
+    id: '4',
+    image_url: '/img/items/item1.png',
+    unit: 'g',
+    quantity: 1,
+    net_weight: '100',
+    name: 'Củ cải trắng',
+    price: 6000,
+    starRank: 4,
+    reviews: 20,
+  },
+];

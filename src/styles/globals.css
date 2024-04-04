@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url(./customs.css);
+
+@layer components {
+  .transition-primary {
+    @apply transition-all duration-300 ease-linear;
+  }
+
+  .color-primary {
+    @apply text-green-500;
+  }
+
+  .btn {
+    @apply border-none outline-none focus:outline-none;
+  }
+
+  .btn-primary {
+    @apply transition-primary md:text-sm my-2 cursor-pointer rounded-md bg-primary px-5 font-normal text-white focus:outline-none focus-visible:outline-none;
+  }
+
+  .btn-secondary {
+    @apply transition-primary my-2 cursor-pointer rounded-md bg-white px-5 font-normal text-black hover:bg-inactive hover:text-white focus:outline-none focus-visible:outline-none;
+  }
+
+  :link {
+    @apply transition-primary;
+  }
+}
+
+@layer utilities {
+  .line-hover {
+    @apply relative;
+  }
+
+  .line-hover::after {
+    @apply transition-primary absolute -bottom-[5px] left-0 h-[2px] w-[0%] rounded-xl bg-primary content-[""];
+  }
+
+  .line-hover:hover::after {
+    @apply w-[100%];
+  }
+
+  .swiper-pagination-bullet-active {
+    @apply !bg-red-500;
+  }
+
+  .flexCenter {
+    @apply flex flex-row justify-center items-center;
+  }
+
+  .flexBetween {
+    @apply flex flex-row justify-between items-center;
+  }
+
+  .flexStart {
+    @apply flex flex-row items-center justify-start;
+  }
+
+  .flexColCenter {
+    @apply flex flex-col justify-center items-center;
+  }
+
+  .flexColStart {
+    @apply flex flex-col justify-start items-center;
+  }
+
+  .flexColBetween {
+    @apply flex flex-col justify-between items-center;
+  }
+}
